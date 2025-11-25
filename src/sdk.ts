@@ -65,12 +65,13 @@ function randomPastTimestamp(): number {
 }
 
 function buildPayload(err: unknown): BugstrPayload {
-  const message =
-    err instanceof Error
-      ? err.message || "Unknown error"
-      : typeof err === "string"
-      ? err
-      : "Unknown error";
+  let message = "Unknown error";
+  if (err instanceof Error) {
+    message = err.message || "Unknown error";
+  } else if (typeof err === "string") {
+    message = err;
+  }
+
   const stack = err instanceof Error && typeof err.stack === "string" ? err.stack : "";
   const patterns = config.redactPatterns?.length ? config.redactPatterns : DEFAULT_REDACTIONS;
   return {
