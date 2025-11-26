@@ -5,6 +5,9 @@ Minimal browser SDK for sending crash reports as NIP-17 giftwrapped DMs using `n
 - `captureException` – build payload, redact, confirm with user, and send via NIP-17
 - Window hooks (error/unhandledrejection) wired automatically after `init`
 
+  <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/1c3c17dc-6a6d-4881-9ac7-32217bd4e1ad" />
+
+
 ## Install
 ```bash
 npm install bugstr-ts
