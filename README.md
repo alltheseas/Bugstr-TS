@@ -1,6 +1,6 @@
 # Bugstr-TS (POC)
 
-Minimal browser SDK for sending crash reports as [NIP-17 giftwrapped DMs](https://github.com/nostr-protocol/nips/blob/master/17.md) using `[nostr-tools](https://github.com/nbd-wtf/nostr-tools)`. Ships:
+Minimal browser SDK for sending crash reports as [NIP-17 giftwrapped DMs](https://github.com/nostr-protocol/nips/blob/master/17.md) using [nostr-tools](https://github.com/nbd-wtf/nostr-tools). Ships:
 - `init` – configure Bugstr (developer npub, relays, env/release, redaction, confirm hook)
 - `captureException` – build payload, redact, confirm with user, and send via NIP-17
 - Window hooks (error/unhandledrejection) wired automatically after `init`
