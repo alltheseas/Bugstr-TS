@@ -7,7 +7,6 @@ Minimal browser SDK for sending crash reports as [NIP-17 giftwrapped DMs](https:
 
   <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/1c3c17dc-6a6d-4881-9ac7-32217bd4e1ad" />
 
-
 ## Install
 ```bash
 npm install bugstr-ts
@@ -58,3 +57,6 @@ Payload should show `[redacted]` in place of secrets.
 ## Notes
 - Browser-first; relies on `nostr-tools` nip44 and `Relay.connect`.
 - Early return/guard clauses used to avoid deep nesting.
+
+## Other Operating Systems
+For Android utilize https://github.com/alltheseas/bugstr
